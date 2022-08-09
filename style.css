@@ -1,8 +1,13 @@
 * {
     margin: 0;
+    max-width: auto;
+}
+body {
+    overflow-x: hidden;
 }
 .section-one {
     background-color: #023047;
+    padding: 15px 5px 55px 5px;
 }
 
 .header {
@@ -11,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 .separador {
     justify-content: space-evenly;}
@@ -37,10 +43,9 @@
 }
 
 .dog img {
-width: 700px;
+max-width: 700px;
 height: auto;
-align-self: flex-end;
-margin: 30 px;    
+margin: 30px 5px 30px 30px;    
 display: flex;
 }
 a {
@@ -51,20 +56,93 @@ a {
     margin: 15px;
     font-size: 24px;
     display: flex;
-    justify-content: space-around;
-flex-wrap: wrap;
-width: 100%;
+    justify-content: space-evenly;
+    width: 100%;
 }
-
-.text {
-    width: 700px;
+.text-one  {
+    width: 300px;
     margin-top: 50px;
     display: flex;
     text-align: left;
-    align-items: flex-start;
-
+    flex-direction: column;
+        
+}
+#text-one  {
+    font-weight: bolder;
+    font-family:'Roboto', sans-serif;
+    font-size: 40px;
+    padding-bottom: 5px;
+    
 }
 p {
+    font-size: medium;
     text-align: justify;
-    
+}
+
+
+.pata {
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+button {
+    width: 75px;
+    margin-top: 5px;
+    background-color: #3882F6;
+    border-radius: 10%;
+
+   
+}
+/*section two*/
+
+.section-two {
+    background-color: rgb(186, 210, 231);
+    padding: 50px 15px 50px 15px;
+}
+
+.text-two {
+    text-align: center;
+}
+.frame {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.dog-img img {
+        width: auto;
+        max-height: auto;
+        object-fit: contain;
+        border: solid #3882F6 5px;
+}
+figcaption {
+    text-align: center;
+}
+
+/* section three */
+
+.section-three {
+    background-color: #E5E7EB;
+}
+.text-three {
+    width: 700px;
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto',sans-serif;
+    font-style: italic;
+    font-weight: light;
+    font-size: 34px;
+    color: #1f2937;
+}
+#creator  {
+    text-align: center;
+    width: auto;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 34px;
+    color: #1f2937;}
+#text-three {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 100px 0px;   
 }
